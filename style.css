@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-color: #22242A;
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    height: 30px;
+}
+
+.left-side h3 {
+    color: #fff;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.left-side span {
+    color: #d6c808;
+}
+
+.btn-logout {
+    background-color: #d6c808;
+    float: right;
+    margin: -25px 70px 0 0;
+    font-size: 14px;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 5px;
+    color: #fff;
+    transition: background 0.4s;
+}
+
+.btn-logout:hover {
+    background-color: #b3a814;
+}
+
+.sidebar {
+    background: #2f323a;
+    margin-top: 70px;
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    transition: left 0.5s;
+}
+
+.profile {
+    width: 100px;
+    height: 110px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.sidebar h4 {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.nav-lists a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    width: 100%;
+    line-height: 50px;
+    box-sizing: border-box;
+    transition: background 0.6s;
+}
+
+.nav-lists a:hover {
+    background-color: #d6c808;
+}
+
+.nav-lists i {
+    margin-right: 10px;
+}
+
+.burger {
+    color: #fff;
+    position: fixed;
+    cursor: pointer;
+    left: 230px;
+    transition: color 0.4s;
+    font-size: 20px;
+}
+
+.burger:hover {
+    color: #d6c808;
+}
+
+#check:checked~.sidebar {
+    left: -180px;
+}
+
+#check:checked~.sidebar .nav-lists {
+    position: relative;
+    top: -100px;
+}
+
+#check:checked~.sidebar .nav-lists a span {
+    display: none;
+}
+
+#check:checked~.sidebar a {
+    font-size: 20px;
+    margin-left: 180px;
+    width: 70px;
+}
+
+#check:checked~.sidebar .nav-lists i {}
+
+#check:checked~.content {
+    margin-left: 60px;
+}
+
+#check {
+    display: none;
+}
+
+.content {
+    position: fixed;
+    color: white;
+    margin-top: 70px;
+    margin-left: 250px;
+    background: url(/bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: 0.5s;
+}
+
+.main-heading {
+    width: 50%;
+    margin: 20px auto;
+    font-size: 40px;
+}
+
+.content-box {
+    width: 80%;
+    margin: 50px auto 10px auto;
+}
+
+.content-box h1 {
+    font-size: 20px;
+    color: #d6c808;
+}
+
+.content-box p {
+    font-size: 14;
+}
